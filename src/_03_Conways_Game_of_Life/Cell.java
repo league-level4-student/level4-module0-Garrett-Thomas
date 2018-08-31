@@ -62,5 +62,9 @@ public class Cell implements Drawable {
 		g.fillRect(x, y, cellSize, cellSize);
 		//g.drawRect(x, y, cellSize, cellSize);
 		}
+		else if (!isAlive) {
+			g.setColor(Color.LIGHT_GRAY);
+			g.fillRect(x, y, cellSize, cellSize);
+		}
 	}
 }

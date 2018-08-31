@@ -62,7 +62,7 @@ public class ConwaysGameOfLife extends JPanel implements ActionListener{
 		add(gamePanel, BorderLayout.CENTER);
 		
 		window.pack();
-		window.setResizable(false);
+		window.setResizable(true);
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		window.setVisible(true);
 	}
@@ -79,6 +79,7 @@ public class ConwaysGameOfLife extends JPanel implements ActionListener{
 					x = Integer.parseInt(speedField.getText());
 					if(x <= 0) {
 						x = 1;
+						
 					}
 				}catch (NumberFormatException ex) {
 					ex.printStackTrace();
